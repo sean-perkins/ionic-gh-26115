@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+		<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+
+		<script src="../dist/bundle.esm.js" type="module"></script>
+
+		<style>
+
+			body {
+				height: 98vh;
+				width: 98vw;
+				border: 0.25rem solid black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				background-color: #696969;
+			}
+
+			.default-box {
+				border: 0.25rem solid black;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+		</style>
+
+	</head>
+
+	<body class="ion-padding ion-margin">
+
+			<h1>Hello from body!</h1>
+
+			<div class="ion-padding ion-margin default-box" style="background-color: #808080">
+
+				<ion-app>
+
+					<ion-router>
+
+						<ion-route url="/" component="home-view"></ion-route>
+						<ion-route url="/about" component="about-view"></ion-route>
+
+					</ion-router>
+
+					<ion-router-outlet></ion-router-outlet>
+
+				</ion-app>
+			
+			<div>
+
+	</body>
+
+</html>

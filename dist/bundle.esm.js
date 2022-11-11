@@ -1869,27 +1869,19 @@ var IonicStyles = i`
 var AppRoot = class extends s4 {
   render() {
     return y`
-
-			<div class="ion-padding ion-margin default-box" style="background-color: #808080">
-
-				<h3>Hello from  App Root!</h3>
-
 				<ion-app>
-
-					<ion-router>
-
+					<ion-router root="src" use-hash="false">
 						<ion-route url="/" component="home-view"></ion-route>
 						<ion-route url="/about" component="about-view"></ion-route>
-
 					</ion-router>
 
 					<ion-router-outlet></ion-router-outlet>
 
 				</ion-app>
-			
-			<div>
-
 		`;
+  }
+  createRenderRoot() {
+    return this;
   }
 };
 __publicField(AppRoot, "styles", [IonicStyles]);
@@ -1934,9 +1926,6 @@ __publicField(AboutView, "styles", [IonicStyles]);
 AboutView = __decorateClass([
   e4("about-view")
 ], AboutView);
-
-// src/index.ts
-console.log("Hello from index.ts!");
 /**
  * @license
  * Copyright 2017 Google LLC
